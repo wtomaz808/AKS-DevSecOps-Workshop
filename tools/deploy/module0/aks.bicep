@@ -6,7 +6,7 @@ param dnsPrefix string = resourceGroup().name // name is obtained from env
 param clusterName string = 'devsecops-aks'
 
 @description('The unique name for the Azure Key Vault.')
-param akvName string = 'akv-${uniqueString(resourceGroup().id)}'
+param akvName string = 'akv1-${uniqueString(resourceGroup().id)}'
 
 
 // Optional params
